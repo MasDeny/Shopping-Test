@@ -13,7 +13,26 @@ namespace RecruitmentTest.Services
         User GetById(int id);
         User Create(User user, string password);
     }
-    public class UserService
+    public class UserService : IUserService
     {
+        public User Authenticate(string username, string password)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User Create(User user, string password)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<User> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public User GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
